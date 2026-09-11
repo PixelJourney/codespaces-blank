@@ -18,7 +18,13 @@ gcc -no-pie Task2.s print_ram.c -o task2
 ./task2
 
 #Task3
-##Complie
+##Compile
 gcc -no-pie Task3.s print_ram.c -o task3
 ##Run
 ./task3
+
+#Task4
+##Compile
+gcc -no-pie Task4.s print_ram.c -o task4
+##Run
+./task4
