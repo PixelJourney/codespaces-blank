@@ -5,24 +5,24 @@
 .section .text
 .global fill_ram            # Make function visible to C program
 fill_ram:
-    lea ram+0x50, %rsi
-    movb $0xFF,(%rsi)
-    inc %rsi
-    movb $0xFF,(%rsi)
-    inc %rsi
-    movb $0xFF,(%rsi)
-    inc %rsi
-    movb $0xFF,(%rsi)
-    inc %rsi
-    movb $0xFF,(%rsi)
-    inc %rsi
-    movb $0xFF,(%rsi)
-    inc %rsi
-    movb $0xFF,(%rsi)
-    inc %rsi
-    movb $0xFF,(%rsi)
-    inc %rsi
-    movb $0xFF,(%rsi)
+    lea ram+0x50, %eax
+    movb $0xFF,(%eax)
+    inc %eax
+    movb $0xFF,(%eax)
+    inc %eax
+    movb $0xFF,(%eax)
+    inc %eax
+    movb $0xFF,(%eax)
+    inc %eax
+    movb $0xFF,(%eax)
+    inc %eax
+    movb $0xFF,(%eax)
+    inc %eax
+    movb $0xFF,(%eax)
+    inc %eax
+    movb $0xFF,(%eax)
+    inc %eax
+    movb $0xFF,(%eax)
 
     ret         #return to C program
 
