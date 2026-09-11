@@ -9,15 +9,15 @@ fill_ram:
     xorb %al,%al
     mov $1, %bl
 
-    loop_label:
+    loop_label:             #loop adding bl to al until bl = 11 (N+1) 
         addb %bl, %al
         incb %bl
         cmpb $11, %bl
-        jne loop_label
+        jne loop_label      #check if bl == 11 if not jump back up to loop_label
     
-    movb %al, ram+0x50
+    movb %al, ram+0x50      #move al into ram 50
 
-    ret
+    ret                     #Return to c program
 
 
 
