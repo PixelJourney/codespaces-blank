@@ -1,4 +1,4 @@
-#Lab1
+#Lab2
 ##Compile
 gcc -nostdlib -no-pre print_hello.s -o hello
 ##Run
